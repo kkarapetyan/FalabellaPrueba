@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20019"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OpenModuleViewController" customModule="FalabellaApp" customModuleProvider="target">
+            <connections>
+                <outlet property="mOpenModule" destination="lYq-C3-I0C" id="CoX-tO-JUk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="M5o-UX-GOO">
+                    <rect key="frame" x="87" y="140" width="240" height="128"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYq-C3-I0C">
+                    <rect key="frame" x="123" y="361" width="168" height="41"/>
+                    <color key="backgroundColor" red="0.1960784314" green="0.25490196079999999" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Abrir modulo">
+                        <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="openModule:" destination="-1" eventType="touchUpInside" id="JkC-hE-jdc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lYq-C3-I0C" firstAttribute="centerX" secondItem="M5o-UX-GOO" secondAttribute="centerX" id="0XM-Oi-eNq"/>
+                <constraint firstItem="M5o-UX-GOO" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.57971" id="CH0-Me-xY1"/>
+                <constraint firstItem="M5o-UX-GOO" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.142857" id="IW0-Uc-bpe"/>
+                <constraint firstItem="M5o-UX-GOO" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="KwR-G9-RUy"/>
+                <constraint firstItem="lYq-C3-I0C" firstAttribute="height" secondItem="M5o-UX-GOO" secondAttribute="height" multiplier="0.32" id="a7s-mI-NeU"/>
+                <constraint firstItem="lYq-C3-I0C" firstAttribute="bottom" secondItem="M5o-UX-GOO" secondAttribute="bottom" multiplier="1.5" id="lf8-hB-0Es"/>
+                <constraint firstItem="lYq-C3-I0C" firstAttribute="width" secondItem="M5o-UX-GOO" secondAttribute="width" multiplier="0.7" id="mN6-sX-flY"/>
+                <constraint firstItem="M5o-UX-GOO" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.45" id="xCc-D8-QW1"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon" width="66.666664123535156" height="66.666664123535156"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20019"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mulish-SemiBold.ttf">
+            <string>Mulish-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AttributesViewController" customModule="Falabella" customModuleProvider="target">
+            <connections>
+                <outlet property="mActivityV" destination="oeo-aT-lxJ" id="6RI-bP-NQN"/>
+                <outlet property="mSearchTxtFl" destination="IRf-JE-wov" id="Cgj-Qc-Kuy"/>
+                <outlet property="mTableV" destination="JAa-Wn-OX0" id="p0v-Eq-MO3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lyd-40-OgU" userLabel="SearchView">
+                    <rect key="frame" x="20.5" y="48.5" width="373" height="52"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="6fa-Jj-QY6">
+                            <rect key="frame" x="0.0" y="12" width="20.5" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="6fa-Jj-QY6" secondAttribute="height" id="vyO-P1-OYk"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Buscar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-JE-wov">
+                            <rect key="frame" x="47.5" y="0.0" width="325.5" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.33333333329999998" green="0.3411764706" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Mulish-SemiBold" family="Mulish" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="h6x-h5-CO0"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf5-51-SY3">
+                            <rect key="frame" x="0.0" y="41" width="373" height="1"/>
+                            <color key="backgroundColor" name="LitBlackWith0.07Alpha"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Zvi-hh-SPv"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="6fa-Jj-QY6" firstAttribute="leading" secondItem="Lyd-40-OgU" secondAttribute="leading" id="3r9-V9-ya5"/>
+                        <constraint firstItem="6fa-Jj-QY6" firstAttribute="centerY" secondItem="IRf-JE-wov" secondAttribute="centerY" id="7ta-Tw-Izu"/>
+                        <constraint firstAttribute="trailing" secondItem="IRf-JE-wov" secondAttribute="trailing" id="HAs-rb-KiZ"/>
+                        <constraint firstItem="6fa-Jj-QY6" firstAttribute="height" secondItem="Lyd-40-OgU" secondAttribute="height" multiplier="0.387" id="cgN-AO-idM"/>
+                        <constraint firstItem="Cf5-51-SY3" firstAttribute="leading" secondItem="Lyd-40-OgU" secondAttribute="leading" id="fP6-3M-fYf"/>
+                        <constraint firstItem="Cf5-51-SY3" firstAttribute="centerY" secondItem="Lyd-40-OgU" secondAttribute="centerY" multiplier="1.6" id="fUN-Hi-lga"/>
+                        <constraint firstItem="IRf-JE-wov" firstAttribute="width" secondItem="Lyd-40-OgU" secondAttribute="width" multiplier="0.873016" id="lu3-fa-Syd"/>
+                        <constraint firstItem="IRf-JE-wov" firstAttribute="top" secondItem="Lyd-40-OgU" secondAttribute="top" id="sUO-JE-J5p"/>
+                        <constraint firstItem="IRf-JE-wov" firstAttribute="height" secondItem="Lyd-40-OgU" secondAttribute="height" multiplier="0.85" id="smJ-9U-lMe"/>
+                        <constraint firstAttribute="trailing" secondItem="Cf5-51-SY3" secondAttribute="trailing" id="wyF-3h-dih"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JAa-Wn-OX0">
+                    <rect key="frame" x="0.0" y="100.5" width="414" height="761.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="oeo-aT-lxJ">
+                    <rect key="frame" x="188.5" y="318.5" width="37" height="37"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="color" red="0.1960784314" green="0.25490196079999999" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Lyd-40-OgU" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.9" id="734-Rs-643"/>
+                <constraint firstItem="JAa-Wn-OX0" firstAttribute="top" secondItem="Lyd-40-OgU" secondAttribute="bottom" id="9ch-mM-G1Z"/>
+                <constraint firstItem="oeo-aT-lxJ" firstAttribute="centerX" secondItem="JAa-Wn-OX0" secondAttribute="centerX" id="SjS-lA-X2W"/>
+                <constraint firstItem="Lyd-40-OgU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" multiplier="1.1" id="U5N-Ay-lnH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JAa-Wn-OX0" secondAttribute="trailing" id="UN0-qX-3TB"/>
+                <constraint firstItem="JAa-Wn-OX0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c9u-CH-jAr"/>
+                <constraint firstItem="oeo-aT-lxJ" firstAttribute="centerY" secondItem="JAa-Wn-OX0" secondAttribute="centerY" multiplier="0.7" id="h1C-vs-F62"/>
+                <constraint firstItem="Lyd-40-OgU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hVF-bV-SyS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JAa-Wn-OX0" secondAttribute="bottom" id="qXP-GJ-jmb"/>
+                <constraint firstItem="Lyd-40-OgU" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0580357" id="vad-KY-BiF"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image" width="20" height="20"/>
+        <namedColor name="LitBlackWith0.07Alpha">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

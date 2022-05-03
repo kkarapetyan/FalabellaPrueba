@@ -1,0 +1,6 @@
+framework module Falabella {
+  umbrella header "Falabella-umbrella.h"
+
+  export *
+  module * { export * }
+}

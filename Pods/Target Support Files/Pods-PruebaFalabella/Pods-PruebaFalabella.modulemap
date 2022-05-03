@@ -1,0 +1,6 @@
+framework module Pods_PruebaFalabella {
+  umbrella header "Pods-PruebaFalabella-umbrella.h"
+
+  export *
+  module * { export * }
+}
